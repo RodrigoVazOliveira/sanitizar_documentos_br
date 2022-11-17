@@ -1,6 +1,5 @@
-from datetime import datetime, timedelta
-from date_brazil import DataBrazil
+from search_address_brazil import SearchAddressBrazil
 
-date_br = DataBrazil()
-print(date_br.time_registred())
-print(date_br)
+cep = 25870145
+search_address_brazil = SearchAddressBrazil(cep)
+print(search_address_brazil)
