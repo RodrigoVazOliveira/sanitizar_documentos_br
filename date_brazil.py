@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 class DataBrazil:
@@ -21,6 +21,10 @@ class DataBrazil:
 
     def datetime_formated(self):
         return self.moment_registred.strftime("%d/%m/%Y %H:%M:%S")
+
+    def time_registred(self):
+        time_registred = (datetime.today() + timedelta(days=2)) - self.moment_registred
+        return time_registred
 
     def __str__(self):
         return self.datetime_formated()
