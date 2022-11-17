@@ -7,3 +7,5 @@ validate_document_personal_cpf.validate()
 
 validate_document_personal_cnpj = ValidateDocumentPersonal(cnpj, "cnpj")
 validate_document_personal_cnpj.validate()
+
+
