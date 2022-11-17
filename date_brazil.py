@@ -20,7 +20,7 @@ class DataBrazil:
         return day_of_week[self.moment_registred.weekday()]
 
     def datetime_formated(self):
-        return self.moment_registred.strftime("%d/%m/%Y %H:%M:%S")
+        return self.moment_registred.strftime("%d/%m/%Y %H:%M:%S %Z")
 
     def time_registred(self):
         time_registred = (datetime.today() + timedelta(days=2)) - self.moment_registred
