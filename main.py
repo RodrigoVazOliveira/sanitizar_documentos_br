@@ -1,4 +1,8 @@
-from validate_telephone import ValidateTelephone
+from datetime import datetime, timedelta
+from date_brazil import DataBrazil
 
-validate_telephone = ValidateTelephone("1234231123413")
-print(validate_telephone)
+date_registred = DataBrazil()
+print(date_registred.moment_registred)
+print(date_registred.get_day_week())
+print(date_registred.getMonth())
+print(date_registred)
